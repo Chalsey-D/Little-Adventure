@@ -11,6 +11,13 @@ def main():
   print("4.Go Home\n")
 
   choice = int(input())
+
+  if choice == 1:
+    print("Consumables = ",consumables)
+    print("Weapon = ",weapon)
+    print("Armor = ",armor)
   
+  else:
+    print("We are done here")
 
 main()
