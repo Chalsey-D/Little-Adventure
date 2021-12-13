@@ -1,0 +1,63 @@
+A.Menu
+	1.Check inventory
+	2.Go to Shop
+	3.Go on an Adventure
+	4.Return Home
+**This will be the menu the user see's**
+-------------------------------------------------------------------------------------------
+B.Check inventory
+	the users inventory sorted by 3 different categories
+		1. Consumables Examples
+			a.potion
+			b.antidote
+			c.food
+		2. Armor Examples
+			a.bronze helm
+			b.chainmail
+			c.leather boots
+		3. Weapon Examples
+			a.bronze sword
+			b.bow
+			c.arrows
+	the amount of money they have will also be displayed.
+	after the user checks their inventory they will be returned to the Menu.
+-------------------------------------------------------------------------------------------
+C.Go to Shop
+	the user will visit a shop that will sell items to them, after they leave the shop will always refresh their consumables
+the shop's inventory will be sorted the same way the users inventory is sorted (see B.Check inventory).
+Each item will have a price, the user will type out what they want and if they want to buy it. the price is subtracted from the user's 
+money. 
+		**Example**
+			"What would you like to buy?"
+				1. Consumables
+				2. Armor
+				3. Weapons
+			*user input*
+				Display choice's inventory along with the price of each item
+			*user types out item of choice*
+			"Do you wan to by x? (Y/N)
+				*if user says no go back to previous screen
+				* if user says yes take the price out of the user's total money and add item to inventory
+			Display the inventory again.
+		the user will have the option to go back to the main menu of the shop or leaving entirely
+				4.Go back
+				5. Leave shop
+-------------------------------------------------------------------------------------------
+D. Go on an adventure
+	The user will be able to go on a random adventure. there will be three adventures that can be selected.
+		1. Go to a bandit hideout:
+			the user will go to a bandit hideout to clear out, it the player has armor or a potion they will succed and
+			get 100g from it. If not they will fail.
+		2. Find treasure:
+			the user will be tasked with finding treasure, the user doesnt need anything and it is at random what the rewards are.
+				1. nothing
+				2. 50g
+				3. 150g
+				4. 300g
+		3. Go kill some boars
+			the user will go kill some boars for a local hunter
+				1. if the user has a bow and arrows:they will recieve 75g
+				2. if the user does no have a bow and arrows: they will recieve 50g
+-------------------------------------------------------------------------------------------
+E. Go Home
+	this will end the program
