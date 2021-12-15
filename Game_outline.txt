@@ -35,7 +35,7 @@ money.
 			*user input*
 				Display choice's inventory along with the price of each item
 			*user types out item of choice*
-			"Do you wan to by x? (Y/N)
+			"Do you want to buy x? (Y/N)
 				*if user says no go back to previous screen
 				* if user says yes take the price out of the user's total money and add item to inventory
 			Display the inventory again.
