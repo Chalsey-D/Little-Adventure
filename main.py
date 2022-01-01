@@ -37,7 +37,21 @@ def Go_to_Shop():
 
   answer = int(input())
 
+#if you are buying a potion
   if answer == 1:
+    for key,value in shop_consumables.items():
+      print("Item: {} Price: {}g".format(key,value))
+    purchase = input("\nWhich do you want?")
+
+    if purchase.lower() == "poiton" and wallet >= 25:
+      consumables.append("poiton")
+    elif purchase.lower() == "antidote" and wallet >= 50:
+      consumables.append("antidote")
+    else:
+      print("You do not have enough money or I don't have what you want.")
+#if you are buying an antidote
+  #elif answer == 2:
+
     
 #def Adventure():
 
@@ -60,10 +74,10 @@ def main():
   elif == 2:
     Go_to_Shop()
   
-  elif == 3:
+  #elif == 3:
     #Adventure()
 
-  elif == 4:
+  #elif == 4:
     #Go_Home()
 
   else:
