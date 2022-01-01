@@ -39,7 +39,9 @@ def Go_to_Shop():
 
   if answer == 1:
     
+#def Adventure():
 
+#def Go_Home():
 
 #this is the menu
 def main():
@@ -56,7 +58,13 @@ def main():
     Check_inventory()
   
   elif == 2:
+    Go_to_Shop()
+  
+  elif == 3:
+    #Adventure()
 
+  elif == 4:
+    #Go_Home()
 
   else:
     print("We are done here")
