@@ -40,45 +40,45 @@ def Go_to_Shop():
 
   #while answer == True:
 #if you are buying a potion
-    if answer == 1:
-      for key,value in shop_consumables.items():
-        print("Item: {} Price: {}g".format(key,value))
-      purchase = input("\nPlease type which one do you want?")
+  if answer == 1:
+    for key,value in shop_consumables.items():
+      print("Item: {} Price: {}g".format(key,value))
+    purchase = input("\nPlease type which one do you want?")
 
-      if purchase.lower() == "poiton" and wallet >= 25:
-        consumables.append("poiton")
-      elif purchase.lower() == "antidote" and wallet >= 50:
-        consumables.append("antidote")
-      else:
-        print("You do not have enough money or I don't have what you want.")
-  #if you are buying armor
-    elif answer == 2:
-      for key,value in shop_Armor.items():
-        print ("Item: {} Price: {}g".format(key,value))
-      purchase = input("\nPlease type which one do you want?")
+    if purchase.lower() == "poiton" and wallet >= 25:
+      consumables.append("poiton")
+    elif purchase.lower() == "antidote" and wallet >= 50:
+      consumables.append("antidote")
+    else:
+      print("You do not have enough money or I don't have what you want.")
+#if you are buying armor
+  elif answer == 2:
+    for key,value in shop_Armor.items():
+      print ("Item: {} Price: {}g".format(key,value))
+    purchase = input("\nPlease type which one do you want?")
 
-      if purchase.lower() == "bronze helm" and wallet >= 75:
-        armor.append("bronze helm")
-      elif purchase.lower() == "chainmail" and wallet >= 300:
-        armor.append("chainmail")
-      elif purchase.lower() == "leather boots" and wallet >= 100:
-        armor.append("leather boots")
-      else:
-        print("You do not have enough money or I don't have what you want.")
-  #if you are buying weapons
-    elif answer == 3:
-      for key,value in shop_Weapons.items():
-        print("Item: {} Price: {}g".format(key,value))
-      purchase = input("\nPlease type which one do you want?")
+    if purchase.lower() == "bronze helm" and wallet >= 75:
+      armor.append("bronze helm")
+    elif purchase.lower() == "chainmail" and wallet >= 300:
+      armor.append("chainmail")
+    elif purchase.lower() == "leather boots" and wallet >= 100:
+      armor.append("leather boots")
+    else:
+      print("You do not have enough money or I don't have what you want.")
+#if you are buying weapons
+  elif answer == 3:
+    for key,value in shop_Weapons.items():
+      print("Item: {} Price: {}g".format(key,value))
+    purchase = input("\nPlease type which one do you want?")
 
-      if purchase.lower() == "bronze sword" and wallet >= 150:
-        weapon[0] = "bronze sword"
-      elif purchase.lower() == "bow" and wallet >= 75:
-        weapon.append("bow")
-      elif purchase.lower() == "arrow" and wallet >= 100:
-        weapon.append("arrow")
-      else:
-        print("You do not have enough money or I don't have what you want.")
+    if purchase.lower() == "bronze sword" and wallet >= 150:
+      weapon[0] = "bronze sword"
+    elif purchase.lower() == "bow" and wallet >= 75:
+      weapon.append("bow")
+    elif purchase.lower() == "arrow" and wallet >= 100:
+      weapon.append("arrow")
+    else:
+      print("You do not have enough money or I don't have what you want.")
     
 #def Adventure():
 
