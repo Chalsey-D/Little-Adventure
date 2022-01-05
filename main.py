@@ -2,7 +2,7 @@
 consumables = ["potion"]
 weapon = ["wooden sword"]
 armor = []
-wallet = 0
+wallet = 500
 
 #Shop's starting inventory
 shop_consumables = {
@@ -95,19 +95,27 @@ def main():
 
   choice = int(input())
 
-  if choice == 1:
-    Check_inventory()
-  
-  elif choice == 2:
-    Go_to_Shop()
-  
-  #elif choice == 3:
-    #Adventure()
+  while choice == True:
+    if choice == 1:
+      Check_inventory()
+      Again = input("do you want to do anything else? (Y/N) ")
+      if Again.lower == "y":
+        choice = int(input())
+      else:
+        print("We are done here")
+        choice = 0
+   
+    elif choice == 2:
+      Go_to_Shop()
+    
+    #elif choice == 3:
+      #Adventure()
 
-  #elif choice == 4:
-    #Go_Home()
+    #elif choice == 4:
+      #Go_Home()
 
   else:
-    print("We are done here")
+    print("Goodbye!")
+    
 
 main()
